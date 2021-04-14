@@ -1,5 +1,6 @@
 public class AddService {
     private VehicleAd[] adList;
+
     public void setAdList(VehicleAd[] adList) {
         this.adList = adList;
     }
@@ -38,5 +39,9 @@ public class AddService {
                         vehicleType.getTypeName() + ", критерий - " + vehicleType.getAttributeOfType() + ", так как имеет тип авто " + ad.getVehicleTypeByFuelTypes().getTypeName());
             }
         }
+    }
+
+    public void setAds(VehicleAd[] ads) {
+        this.adList = ads;
     }
 }

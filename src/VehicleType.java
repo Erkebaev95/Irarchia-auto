@@ -1,5 +1,6 @@
 public class VehicleType {
     protected String attribute;
+
     public VehicleType(String attribute) {
         this.attribute = attribute;
     }
@@ -9,6 +10,6 @@ public class VehicleType {
     }
 
     public String getTypeName() {
-        return "Some vehicle type name";
+        return "Vehicle type name";
     }
 }

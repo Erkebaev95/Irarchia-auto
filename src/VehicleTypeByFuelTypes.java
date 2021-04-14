@@ -1,6 +1,6 @@
 public class VehicleTypeByFuelTypes extends VehicleType {
     public VehicleTypeByFuelTypes() {
-        super("Vehicle type by body types");
+        super("Vehicle type by fuel type");
     }
 
     @Override
@@ -9,10 +9,5 @@ public class VehicleTypeByFuelTypes extends VehicleType {
 
         VehicleTypeByFuelTypes that = (VehicleTypeByFuelTypes) obj;
         return attribute != null ? attribute.equals(that.attribute) : false;
-    }
-
-    @Override
-    public String getTypeName() {
-        return super.getTypeName();
     }
 }

@@ -10,9 +10,4 @@ public class VehicleTypeByPurpose extends VehicleType {
         VehicleTypeByPurpose that = (VehicleTypeByPurpose) obj;
         return attribute != null ? attribute.equals(that.attribute) : false;
     }
-
-    @Override
-    public String getTypeName() {
-        return super.getTypeName();
-    }
 }

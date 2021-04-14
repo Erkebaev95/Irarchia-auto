@@ -1,11 +1,11 @@
 public class VehicleAd {
     private String model;
-    private String id;
+    private int id;
     private VehicleTypeByPurpose vehicleTypeByPurpose;
     private VehicleTypeByFuelTypes vehicleTypeByFuelTypes;
     private VehicleTypeByBodyTypes vehicleTypeByBodyTypes;
 
-    public VehicleAd(String model, String id, VehicleTypeByPurpose vehicleTypeByPurpose,
+    public VehicleAd(String model, int id, VehicleTypeByPurpose vehicleTypeByPurpose,
                      VehicleTypeByFuelTypes vehicleTypeByFuelTypes, VehicleTypeByBodyTypes vehicleTypeByBodyTypes) {
         this.model = model;
         this.id = id;
@@ -34,7 +34,7 @@ public class VehicleAd {
         return model;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
