@@ -1,12 +1,18 @@
+import type.body.VehicleTypeByBodyTypes;
+import type.fuel.VehicleTypeByFuelTypes;
+import type.purpose.VehicleTypeByPurpose;
+
 public class VehicleAd {
-    private String model;
     private int id;
+    private String model;
     private VehicleTypeByPurpose vehicleTypeByPurpose;
     private VehicleTypeByFuelTypes vehicleTypeByFuelTypes;
     private VehicleTypeByBodyTypes vehicleTypeByBodyTypes;
 
-    public VehicleAd(String model, int id, VehicleTypeByPurpose vehicleTypeByPurpose,
-                     VehicleTypeByFuelTypes vehicleTypeByFuelTypes, VehicleTypeByBodyTypes vehicleTypeByBodyTypes) {
+    public VehicleAd(String model,
+                     int id, VehicleTypeByPurpose vehicleTypeByPurpose,
+                     VehicleTypeByFuelTypes vehicleTypeByFuelTypes,
+                     VehicleTypeByBodyTypes vehicleTypeByBodyTypes) {
         this.model = model;
         this.id = id;
         this.vehicleTypeByPurpose = vehicleTypeByPurpose;
@@ -16,6 +22,14 @@ public class VehicleAd {
 
     public VehicleAd(String model) {
         this.model = model;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public VehicleTypeByPurpose getVehicleTypeByPurpose() {
@@ -28,14 +42,6 @@ public class VehicleAd {
 
     public VehicleTypeByBodyTypes getVehicleTypeByBodyTypes() {
         return vehicleTypeByBodyTypes;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String toString() {

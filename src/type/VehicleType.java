@@ -1,3 +1,5 @@
+package type;
+
 public class VehicleType {
     protected String attribute;
 

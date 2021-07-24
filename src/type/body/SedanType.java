@@ -1,3 +1,7 @@
+package type.body;
+
+import type.VehicleTypeEnum;
+
 public class SedanType extends VehicleTypeByBodyTypes {
     @Override
     public String getTypeName() {

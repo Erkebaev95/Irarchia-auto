@@ -1,9 +1,10 @@
-public class AddService {
-    private VehicleAd[] adList;
+import type.body.VehicleTypeByBodyTypes;
+import type.fuel.VehicleTypeByFuelTypes;
+import type.purpose.VehicleTypeByPurpose;
 
-    public void setAdList(VehicleAd[] adList) {
-        this.adList = adList;
-    }
+public class AddService {
+
+    private VehicleAd[] adList;
 
     public void filterByVehicleTypeByPurpose(VehicleTypeByPurpose vehicleType) {
         for (VehicleAd ad : adList) {
